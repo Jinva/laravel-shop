@@ -24,7 +24,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/email_verification/verify', 'EmailVerificationController@verify')->name('email_verification.verify');
 
     Route::group(['middleware' => 'email_verified'], function() {
-    	// 收货地址管理
+    	// 收货地址
         Route::get('user_addresses', 'UserAddressesController@index')->name('user_addresses.index');
         Route::get('user_addresses/create', 'UserAddressesController@create')->name('user_addresses.create');
         Route::post('user_addresses', 'UserAddressesController@store')->name('user_addresses.store');
@@ -36,8 +36,10 @@ Route::group(['middleware' => 'auth'], function() {
         Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
         Route::get('products/favorites', 'ProductsController@favorites')->name('products.favorites');
 
-        // 加入购物车
+        // 购物车
         Route::post('cart', 'CartController@add')->name('cart.add');
+        Route::get('cart', 'CartController@index')->name('cart.index');
+        Route::delete('cart/{sku}', 'CartController@remove')->name('cart.remove');
     });
 });
 
