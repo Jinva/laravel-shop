@@ -20,4 +20,5 @@ Route::group([
     $router->get('orders', 'OrdersController@index')->name('admin.orders.index');
     $router->get('order/{order}', 'OrdersController@show')->name('admin.orders.show');
     $router->post('orders/{order}/ship', 'OrdersController@ship')->name('admin.orders.ship');
+    $router->post('orders/{order}/refund', 'OrdersController@handleRefund')->name('admin.orders.handle_refund');
 });
