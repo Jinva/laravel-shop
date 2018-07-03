@@ -49,10 +49,14 @@ Route::group(['middleware' => 'auth'], function() {
         // 支付宝
         Route::get('payment/{order}/alipay', 'PaymentController@payByAlipay')->name('payment.alipay');
         Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');
+
+        // 物流
+        Route::post('orders/{order}/received', 'OrdersController@received')->name('orders.received');
     });
 });
 
 // 商品展示
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 
+// 支付宝
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
