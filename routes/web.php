@@ -52,6 +52,10 @@ Route::group(['middleware' => 'auth'], function() {
 
         // 物流
         Route::post('orders/{order}/received', 'OrdersController@received')->name('orders.received');
+
+        // 评分和评价
+        Route::get('orders/{order}/review', 'OrdersController@review')->name('orders.review.show');
+        Route::post('orders/{order}/review', 'OrdersController@sendReview')->name('orders.review.store');
     });
 });
 
