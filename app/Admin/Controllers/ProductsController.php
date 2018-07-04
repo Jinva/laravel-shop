@@ -104,9 +104,9 @@ class ProductsController extends Controller
             $grid->on_sale('已上架')->display(function ($value){
                 return $value ? '是' : '否';
             });
-            $grid->price('价格');
+            $grid->price('价格')->sortable();
             $grid->rating('评分');
-            $grid->sold_count('销量');
+            $grid->sold_count('销量')->sortable();
             $grid->review_count('评论数');
 
             $grid->actions(function ($actions){
