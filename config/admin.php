@@ -5,17 +5,17 @@ return [
     /*
      * 站点标题
      */
-    'name' => 'Demo Shop',
+    'name' => 'Simple Shop',
 
     /*
      * 页面顶部 Logo
      */
-    'logo' => '<b>Demo</b> Shop',
+    'logo' => '<b>Simple</b> Shop',
 
     /*
      * 页面顶部小 Logo
      */
-    'logo-mini' => '<b>DS</b>',
+    'logo-mini' => '<b>SS</b>',
 
     /*
      * 路由配置
@@ -37,7 +37,7 @@ return [
     /*
      * Laravel-Admin 页面标题
      */
-    'title' => 'Demo Shop 管理后台',
+    'title' => 'Simple Shop 管理后台',
 
     /*
      * 是否使用 https
