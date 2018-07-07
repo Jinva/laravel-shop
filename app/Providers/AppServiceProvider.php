@@ -9,12 +9,6 @@ use Illuminate\Support\ServiceProvider;
 class AppServiceProvider extends ServiceProvider
 {
 
-    // 强制使用 Https
-    public function boot()
-    {
-        \URL::forceScheme('https');
-    }
-
     public function register()
     {
         // 往服务容器中注入一个名为 alipay 的单例对象
