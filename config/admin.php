@@ -42,7 +42,7 @@ return [
     /*
      * 是否使用 https
      */
-    'secure' => false,
+    'secure' => true,
 
     /*
      * Laravel-Admin 用户认证设置
