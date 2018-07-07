@@ -14,6 +14,11 @@
     <div id="app" class="{{ route_class() }}-page">
         @include('layouts._header')
         <div class="container">
+            <div>
+                <span>后台管理：<a href="{{ url('/admin') }}">{{ url('/admin') }}</a></span>
+                <span>帐号：admin</span>
+                <span>密码：admin</span>
+            </div>
             @yield('content')
         </div>
         @include('layouts._footer')
