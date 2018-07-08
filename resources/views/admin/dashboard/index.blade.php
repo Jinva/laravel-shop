@@ -1,9 +1,8 @@
 <section class="content">
-
-                                
-        <div class="row"><div class="col-md-3"><div class="small-box bg-aqua">
+                               
+<div class="row"><div class="col-md-3"><div class="small-box bg-aqua">
     <div class="inner">
-        <h3>1024</h3>
+        <h3>1200</h3>
 
         <p>用户管理</p>
     </div>
@@ -16,7 +15,7 @@
     </a>
 </div></div><div class="col-md-3"><div class="small-box bg-green">
     <div class="inner">
-        <h3>150%</h3>
+        <h3>8000</h3>
 
         <p>商品管理</p>
     </div>
@@ -42,7 +41,7 @@
     </a>
 </div></div><div class="col-md-3"><div class="small-box bg-red">
     <div class="inner">
-        <h3>698726</h3>
+        <h3>2000</h3>
 
         <p>优惠券管理</p>
     </div>
