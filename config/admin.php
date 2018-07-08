@@ -1,5 +1,7 @@
 <?php
 
+$env_config = get_env_config();
+
 return [
 
     /*
@@ -42,7 +44,7 @@ return [
     /*
      * 是否使用 https
      */
-    'secure' => true,
+    'secure' => $env_config,
 
     /*
      * Laravel-Admin 用户认证设置
